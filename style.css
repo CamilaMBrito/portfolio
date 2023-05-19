@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;600&display=swap');
 
 *{
     margin: 0;
@@ -16,7 +15,7 @@ body{
 }
 
 .container{
-    margin: 10%;
+    margin: 10% 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +23,9 @@ body{
 
 .container-conteudo {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .container-conteudo-titulo {
@@ -44,4 +46,23 @@ body{
     font-size: 14px;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
+}
+
+.container-botao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-botao-link {
+    margin-top: 25px;
+    background-color: #8672B2;
+    width: 250px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 15px 0;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
