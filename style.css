@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-/*Teste GIT*/
+
 body{
     background-color: #000000;
     color: #ffffff;
@@ -50,19 +50,40 @@ body{
 
 .container-botao {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.container-botao-subtitulo {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container-botao-link {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
     margin-top: 25px;
-    background-color: #8672B2;
-    width: 250px;
+    border: 2px solid #8672B2;
+    width: 290px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 15px 0;
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    align-items: center;
+}
+
+.container-botao-link img {
+    width: 10%;
+}
+
+.container-botao-link:hover{
+    border: 2px solid #bdace0;
+    background-color: #2b2a2a;
 }
