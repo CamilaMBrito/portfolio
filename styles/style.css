@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+    --cor-fundo:#000000;
+    --cor-fonte:#ffffff;
+    --cor-detalhes-primaria:#8672B2;
+    --cor-detalhes-secundaria:#bdace0;
+    --cor-detalhes-terciaria:#2b2a2a;
+    --fonte-primaria:'Montserrat', sans-serif;
+    --fonte-secundaria: 'Libre Baskerville', serif;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #000000;
-    color: #ffffff;
-    /*Serve para deixar o body com a altura total do viewport
-    height: 100vh;*/
-    /*Border-box no box-sizing serve para fazer com que os elementos dentro do body não ocupem um espaço fora dele*/
+    background-color: var(--cor-fundo);
+    color:  var(--cor-fonte);
     box-sizing: border-box;
 }
 
@@ -25,9 +32,14 @@ body {
 
 .cabecalho-menu-link {
     font-size: 18px;
-    color: #8672B2;
+    color: var(--cor-detalhes-primaria);
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-primaria);
+    text-decoration: none;
+}
+
+.cabecalho-menu-link:hover {
+    color: var(--cor-detalhes-secundaria);
 }
 
 .container {
@@ -46,22 +58,22 @@ body {
 
 .container-conteudo-titulo {
     font-size: 36px;
-    color: #8672B2;
-    font-family: 'Libre Baskerville', serif;
+    color: var(--cor-detalhes-primaria);
+    font-family: var(--fonte-secundaria);
 }
 
 .container-conteudo-texto {
     margin-top: 30px;
     font-size: 16px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
 }
 
 .container-conteudo-lista {
     margin-top: 15px;
     font-size: 14px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
 }
 
 .container-botao {
@@ -73,8 +85,8 @@ body {
 
 .container-botao-subtitulo {
     font-size: 16px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-primaria);
 }
 
 .container-botao-link {
@@ -82,15 +94,15 @@ body {
     justify-content: center;
     gap: 12px;
     margin-top: 25px;
-    border: 2px solid #8672B2;
+    border: 2px solid var(--cor-detalhes-primaria);
     width: 290px;
     text-align: center;
     border-radius: 8px;
     padding: 15px 0;
     font-size: 16px;
-    color: #ffffff;
+    color: var(--cor-fonte);
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-primaria);
     text-decoration: none;
     align-items: center;
 }
@@ -100,15 +112,15 @@ body {
 }
 
 .container-botao-link:hover {
-    border: 2px solid #bdace0;
-    background-color: #2b2a2a;
+    border: 2px solid var(--cor-detalhes-secundaria);
+    background-color: var(--cor-detalhes-terciaria);
 }
 
 .rodape {
     font-size: 16px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #8672B2;
+    color: #var(--cor-fonte);
+    font-family: var(--fonte-primaria);
+    background-color: var(--cor-detalhes-primaria);
     padding: 24px;
     text-align: center;
 }
