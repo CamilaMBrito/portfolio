@@ -31,7 +31,7 @@ body {
 }
 
 .cabecalho-menu-link {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     color: var(--cor-detalhes-primaria);
     font-weight: 600;
     font-family: var(--fonte-primaria);
@@ -131,7 +131,25 @@ body {
 }
 
 @media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho-menu{
+        justify-content: center;
+    }
+
     .container{
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container-conteudo{
+        width: auto;
+        text-align: center;
+    }
+
+    .container-imagem{
+        width: 60%;
     }
 }
